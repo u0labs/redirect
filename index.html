@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    /* CSS for fade-in animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .fade-in-text {
+      opacity: 0;
+      animation: fadeIn 3s ease-in-out forwards;
+    }
+  </style>
   <script>
-    // JavaScript redirect to https://wods.ai
-    window.location.href = 'https://wods.ai';
+    // JavaScript redirect to https://wods.ai after 3 seconds
+    setTimeout(function() {
+      window.location.href = 'https://wods.ai';
+    }, 3000);
   </script>
 </head>
 <body>
-  <p>If you are not redirected, <a href="https://wods.ai">click here</a>.</p>
+  <div class="fade-in-text">
+    <h1>"Transform Your Fitness Journey: Wods.AI Unleashes the Power of AI!"</h1>
+  </div>
 </body>
 </html>
